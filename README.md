@@ -10,10 +10,16 @@ Houdini for PHP works with PHP 5.2 or later.
 
 ## Installation
 
-    phpize
-    ./configure --enable-houdini
-    make
-    sudo make install
+    $ cd [php source]/ext
+    $ git clone git@github.com:whatthejeff/houdini-for-php.git houdini
+    $ cd houdini
+    $ git submodule init
+
+    $ phpize
+    $ cd ../../
+    $ ./configure --enable-houdini
+    $ make
+    $ sudo make install
 
 ## Tests
 
